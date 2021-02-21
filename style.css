@@ -1,0 +1,59 @@
+.section.no-top-padding {
+  padding-top: 0;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-list .box.active {
+  font-weight: bold;
+}
+
+#done-list .box p {
+  color: darkgrey;
+  text-decoration: line-through;
+}
+
+.done-btn {
+  color: #23d160;
+  margin-left: 1.5rem;
+}
+
+.remove-btn {
+  color: #ff2b56;
+  margin-left: 1.5rem;
+}
+
+.count-container {
+  text-align: right;
+  padding: 0 1.5rem;
+}
+
+.loader {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.buttonload {
+  background-color: #4caf50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+}
